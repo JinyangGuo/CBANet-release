@@ -1,0 +1,33 @@
+{
+    "decoder_tot_epoch": 30,
+    "width1_tot_epoch": 1,
+    "width2_tot_epoch": 1,
+    "width3_tot_epoch": 1,
+    "AQL1_tot_epoch": 3,
+    "AQL2_tot_epoch": 3,
+    "AQL3_tot_epoch": 3,
+    "lr": {
+        "base": 1e-4,
+        "decay": 0.1,
+        "decay_epoch": 30,
+        "warmup_step": 0
+    },
+    "batch_size": 8,
+    "out_channel_N": 128,
+    "out_channel_M": 192,
+    "test_freq": 1000,
+
+    "decoder_width1": 0.47,
+    "decoder_width2": 0.47,
+    "decoder_width3": 0.69,
+
+    "train_lambda1": 256,
+    "train_lambda2": 512,
+    "train_lambda3": 1024,
+    "train_lambda4": 2048,
+
+    "checkpoint1": "checkpoints/baseline-patch/lambda256/baseline-bpp0.25-psnr29.71-ms_ssim12.63.pth.tar",
+    "checkpoint2": "checkpoints/baseline-patch/lambda512/baseline-bpp0.38-psnr31.54-ms_ssim14.54.pth.tar",
+    "checkpoint3": "checkpoints/baseline-patch/lambda1024/baseline-bpp0.56-psnr33.47-ms_ssim16.63.pth.tar",
+    "checkpoint4": "checkpoints/baseline-patch/lambda2048/baseline-bpp0.77-psnr35.20-ms_ssim18.56.pth.tar"
+}
