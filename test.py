@@ -41,7 +41,7 @@ def log_string(str):
     print(str)
 
 def testKodak(args, config):
-    test_dataset = TestKodakDataset(data_dir='../../datasets/kodak')
+    test_dataset = TestKodakDataset(data_dir='../datasets/kodak')
     test_loader = DataLoader(dataset=test_dataset, shuffle=False, batch_size=1, pin_memory=True, num_workers=4)
 
     Encoder1 = ImageCompressor_slimmable(out_channel_N=config['out_channel_N'],out_channel_M=config['out_channel_M'])
