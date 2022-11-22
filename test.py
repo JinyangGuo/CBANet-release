@@ -12,6 +12,7 @@ import models.synthesis as synthesis
 import models.analysis_prior as analysis_prior
 import models.synthesis_prior as synthesis_prior
 import models.synthesis_slimmable as synthesis_slimmable
+import pruner.SlimmablePruner as SlimmablePruner
 from datasets import Datasets, TestKodakDataset, TestCLICPDataset
 from Meter import AverageMeter
 from tqdm import tqdm
